@@ -1,291 +1,430 @@
-/* Add here all your CSS customizations */
+/* font format*/
 
-@media screen and (max-width: 800px) {
-    #progress-bar {
-        display: none;
+
+/* ends font format*/
+
+
+/* hidden */
+
+.hidden {
+    display: none;
+    visibility: hidden
+}
+.visible-phone {
+    display: none !important
+}
+.visible-tablet {
+    display: none !important
+}
+.hidden-desktop {
+    display: none !important
+}
+.visible-desktop {
+    display: inherit !important
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .hidden-desktop {
+        display: inherit !important
+    }
+    .visible-desktop {
+        display: none !important
+    }
+    .visible-tablet {
+        display: inherit !important
+    }
+    .hidden-tablet {
+        display: none !important
+    }
+}
+@media (max-width: 767px) {
+    .hidden-desktop {
+        display: inherit !important
+    }
+    .visible-desktop {
+        display: none !important
+    }
+    .visible-phone {
+        display: inherit !important
+    }
+    .hidden-phone {
+        display: none !important
     }
 }
 
+/* end hiddening*/
 
-/* simple timeline */
-
-.off-screen {
-  height: 1px;
-  left: -50000px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 1px;
+/* how it works*/
+#how-it-works {
+    background: #008dd8;
+    color: white
 }
-
-#progress-bar {
-  position: relative;
-  padding-top: 5px;
-  margin-bottom: 1.5em;
-  color: #4d483f;
+#how-it-works>.inner>header {
+    padding-top: 80px;
+    padding-bottom: 70px
 }
-#progress-bar #progress-steps {
-  height: 8px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: block;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #fff;
-  position: relative;
-  list-style-type: none;
-  counter-reset: item;
+#how-it-works>.inner>header h2 {
+    color: white;
+    font-family: 'museo-sans-n5', 'museo-sans', sans-serif;
+    font-size: 4.2em;
+    font-weight: 500
 }
-#progress-bar .progress-step {
-  width: 16.66%;
-  height: 8px;
-  float: left;
-  margin: 0;
-  padding: 0;
-  position: relative;
+#how-it-works>.inner>header h2 strong {
+    font-family: 'museo-sans-n9', 'museo-sans', sans-serif;
+    font-weight: 900
 }
-#progress-bar .count:before {
-  content: counter(item) " ";
-  counter-increment: item;
-  display: block;
-  width: 22px;
-  height: 22px;
-  background-color: #fff;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  right: -10px;
-  top: -6px;
-  padding: 0px 0 0px 6px;
-  font-size: 14px;
-  font-weight: bold;
-  z-index: 999;
+#how-it-works>.inner>header h3 {
+    color: #b3dbf1
 }
-#progress-bar .highlight-index:before {
-  background-color: #3cb0a5;
-  color: #fff;
+#how-it-works>.inner>article h5 {
+    color: white
 }
-#progress-bar .highlight-index {
-  background-color: #3cb0a5;
-  display: block;
-  height: 100%;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+#how-it-works>.inner>article p {
+    color: white;
+    margin: 0 0 60px
 }
-#progress-bar .description {
-  display: block;
-  text-align: center;
-  width: 64%;
-  right: -32%;
-  position: absolute;
-  bottom: 20px;
-  font-size: 0.9em;
+#how-it-works>.inner>article .timeline .step .marker {
+    border-color: #008dd8
 }
-#progress-bar .bolded-step {
-  font-weight: normal !important;
+#how-it-works>.inner>article .timeline .step .icon {
+    background-image: url(//assets-impress-services.s3.amazonaws.com/assets/timeline-steps-sprite-e3b9b46cdbbf694e846c3f89464ec73e.png);
+    background-size: 150px 325px
+}
+#how-it-works>.inner>article .timeline .step.pos-1 .icon {
+    background-position: 0 0
+}
+#how-it-works>.inner>article .timeline .step.pos-2 .icon {
+    background-position: 0 -65px
+}
+#how-it-works>.inner>article .timeline .step.pos-3 .icon {
+    background-position: 0 -130px
+}
+#how-it-works>.inner>article .timeline .step.pos-4 .icon {
+    background-position: 0 -195px
+}
+#how-it-works>.inner>article .timeline .step.pos-5 .icon {
+    background-position: 0 -260px
+}
+#how-it-works>.inner>article .timeline .footnote {
+    height: auto;
+    padding-bottom: 65px
+}
+#how-it-works>.inner>article .timeline .footnote strong {
+    color: #03476a
+}
+#how-it-works>.inner>article .timeline .footnote strong em {
+    color: white
 }
 
+/* ends How it works*/
 
-/* snake timeline */
+/* timeline*/
+.timeline .flag {
+    position: relative;
+    z-index: 30;
+    display: inline-block;
+    padding-bottom: 15px;
+    float: left
+}
+.timeline .flag .inner {
+    position: relative;
+    width: 65px;
+    height: 54px;
+    margin: 0 auto 15px;
+    background: #5cb6e6;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 23px
+}
+.timeline .flag .inner strong {
+    display: block;
+    height: 31px;
+    background: white;
+    color: #484745;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 31px
+}
+.timeline .flag .inner:after {
+    position: absolute;
+    content: " ";
+    bottom: -15px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff
+}
+.timeline .bar {
+    position: relative;
+    z-index: 10;
+    clear: both;
+    height: 6px;
+    margin: 0 auto 32px;
+    background: rgba(255, 255, 255, 0.3)
+}
+.timeline .step {
+    position: relative;
+    z-index: 20;
+    float: left;
+    text-align: center
+}
+.timeline .step h5,
+.timeline .step p {
+    margin: 0 !important;
+    font-size: 1.4em
+}
+.timeline .step p {
+    line-height: 128.571%
+}
+.timeline .step .marker {
+    position: absolute;
+    top: -47px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    margin-left: -12px;
+    background: white;
+    border: 5px solid transparent;
+    border-radius: 15px
+}
+.timeline .step .inner {
+    position: relative;
+    padding: 15px
+}
+.timeline .step .inner:after {
+    position: absolute;
+    content: " ";
+    top: -15px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff
+}
+.timeline .step .inner .icon {
+    position: relative;
+    width: 150px;
+    height: 65px;
+    margin: 0 0 10px -75px;
+    left: 50%
+}
+.timeline.positions-5 .flag {
+    width: 20%
+}
+.timeline.positions-5 .flag.offset-left-1 {
+    margin-left: 20%
+}
+.timeline.positions-5 .flag.offset-left-2 {
+    margin-left: 40%
+}
+.timeline.positions-5 .flag.offset-left-3 {
+    margin-left: 60%
+}
+.timeline.positions-5 .flag.offset-left-4 {
+    margin-left: 80%
+}
+.timeline.positions-5 .bar {
+    width: 80%
+}
+.timeline.positions-5 .step {
+    width: 20%
+}
+.timeline .pos-1 {
+    height: 190px;
+    background: rgba(0, 0, 0, 0.08)
+}
+.timeline .pos-1 .inner:after {
+    border-bottom-color: rgba(0, 0, 0, 0.08)
+}
+.timeline .pos-2 {
+    height: 210px;
+    background: rgba(0, 0, 0, 0.14)
+}
+.timeline .pos-2 .inner:after {
+    border-bottom-color: rgba(0, 0, 0, 0.14)
+}
+.timeline .pos-3 {
+    height: 230px;
+    background: rgba(0, 0, 0, 0.2)
+}
+.timeline .pos-3 .inner:after {
+    border-bottom-color: rgba(0, 0, 0, 0.2)
+}
+.timeline .pos-4 {
+    height: 250px;
+    background: rgba(0, 0, 0, 0.26)
+}
+.timeline .pos-4 .inner:after {
+    border-bottom-color: rgba(0, 0, 0, 0.26)
+}
+.timeline .pos-5 {
+    height: 270px;
+    background: rgba(0, 0, 0, 0.31)
+}
+.timeline .pos-5 .inner:after {
+    border-bottom-color: rgba(0, 0, 0, 0.31)
+}
+.timeline .footnote {
+    position: relative;
+    padding-top: 75px;
+    clear: both;
+    color: white;
+    background: none;
+    font-size: 1.4em;
+    line-height: 128.571%;
+    text-align: right
+}
+.timeline .footnote:after {
+    position: absolute;
+    content: " ";
+    top: 10px;
+    right: 60px;
+    height: 45px;
+    width: 6px;
+    background: url(//assets-impress-services.s3.amazonaws.com/assets/dash-vertical-thick-6140b2759496e4fcf86fc5c2290b162c.png) repeat-y;
+    opacity: 0.3
+}
+.timeline .footnote em {
+    font-style: normal
+}
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* end Timeline*/
+
+
+@media (max-width: 1023px) {
+    .timeline .pos-1,
+    .timeline .pos-2,
+    .timeline .pos-3,
+    .timeline .pos-4,
+    .timeline .pos-5 {
+        height: 250px
+    }
 }
-.wrapper {
-  border: 1px solid #dadada;
-  padding: 20px;
-  min-width: 610px;
-  zoom: 1;
-}
-.wrapper:before,
-.wrapper:after {
-  content: "";
-  display: table;
-}
-.wrapper:after {
-  clear: both;
-}
-.wrapper .item-container {
-  width: 33.3333%;
-  float: left;
-  border-bottom: 2px solid #dcdee0;
-  position: relative;
-  font-size: 0;
-}
-.wrapper .item-container.last.first {
-  border-width: 0;
-}
-.wrapper .item-container.last:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 80px;
-  z-index: 1;
-  top: -15px;
-  height: 30px;
-  display: block;
-  background: #fff;
-}
-.wrapper .item-container.last .bullet:after {
-  content: '+';
-  background-color: #59c77f;
-  border-color: #59c77f;
-  color: #fff;
-  line-height: 24px;
-}
-.wrapper .item-container.last .bullet:hover:after {
-  background-color: #3aac62;
-  border-color: #3aac62;
-}
-.wrapper .item-container.last.even:after {
-  left: 80px;
-  right: 0px;
-  top: initial;
-  bottom: -15px;
-}
-.wrapper .item-container.odd {
-  float: right;
-  margin-top: 60px;
-  border-bottom-width: 0;
-  border-top: 2px solid #dcdee0;
-  text-align: right;
-}
-.wrapper .item-container.odd .item {
-  margin-bottom: 0;
-  margin-top: 35px;
-}
-.wrapper .item-container.odd .item:after {
-  bottom: initial;
-  top: -13px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-.wrapper .item-container.odd .bullet {
-  bottom: initial;
-  top: -15px;
-}
-.wrapper .item-container.odd .bullet.first {
-  left: 50%;
-  margin-right: 0;
-  margin-left: -20px;
-  right: 0;
-}
-.wrapper .item-container.odd .bullet.first:after {
-  right: initial;
-  left: 5px;
-}
-.wrapper .item-container.odd .item-piece {
-  vertical-align: top;
-}
-.wrapper .down-bar {
-  background: #fff;
-  position: absolute;
-  bottom: -15px;
-  height: 30px;
-  right: 0px;
-  width: 80px;
-}
-.wrapper .down-bar:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  height: 40px;
-  top: 15px;
-  width: 2px;
-  background: #dcdee0;
-}
-.wrapper .item-piece {
-  vertical-align: bottom;
-/* font-size 16px */
-  text-align: center;
-  max-width: 160px;
-  width: 160px;
-  min-height: 125px;
-  background: #fff;
-  position: relative;
-  display: inline-block;
-}
-.wrapper .item-piece:hover .item {
-  border-color: #59c77f;
-}
-.wrapper .item-piece:hover .bullet:after {
-  border-color: #59c77f;
-}
-.wrapper .item {
-  border: 2px solid #dcdee0;
-  min-height: 90px;
-  margin-bottom: 35px;
-  position: relative;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  vertical-align: bottom;
-  display: inline-block;
-  font-size: 14px;
-  width: 100%;
-}
-.wrapper .item:after {
-  content: '';
-  width: 21px;
-  height: 21px;
-  border-bottom: 2px solid #dcdee0;
-  border-left: 2px solid #dcdee0;
-  border-color: inherit;
-  position: absolute;
-  bottom: -13px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-color: #fff;
-  left: 50%;
-  margin-left: -11.5px;
-}
-.wrapper .bullet {
-  font-size: 16px;
-  display: block;
-  height: 30px;
-  width: 40px;
-  background-color: #fff;
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  margin-left: -20px;
-  z-index: 2;
-}
-.wrapper .bullet.first {
-  left: 0;
-  width: auto;
-  right: 50%;
-  margin-left: 0;
-  margin-right: -20px;
-}
-.wrapper .bullet:after {
-  content: '';
-  display: block;
-  height: 30px;
-  width: 30px;
-  background: #fff;
-  border: 2px solid #dcdee0;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  right: 5px;
-  position: absolute;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+
+@media (max-width: 767px) {
+    #how-it-works>.inner>header {
+        padding-top: 40px;
+        padding-bottom: 0
+    }
+    #how-it-works>.inner>header h2 {
+        font-size: 2.8em;
+        margin-bottom: 10px
+    }
+    #how-it-works>.inner>header h3 {
+        line-height: 110%;
+        margin-bottom: 30px
+    }
+    #how-it-works>.inner>article h5 {
+        font-size: 2em;
+        line-height: 110%;
+        margin: 0 0 10px
+    }
+    #how-it-works>.inner>article p {
+        color: white;
+        margin: 0 0 10px
+    }
+    #how-it-works>.inner>article .timeline .flag {
+        width: 100%;
+        padding-bottom: 0
+    }
+    #how-it-works>.inner>article .timeline .flag .inner {
+        width: 32px;
+        height: 30px;
+        margin-bottom: 7px;
+        font-size: 0.9em;
+        line-height: 14px
+    }
+    #how-it-works>.inner>article .timeline .flag .inner:after {
+        bottom: -7px;
+        margin-left: -7px;
+        border-left-width: 7px;
+        border-right-width: 7px;
+        border-top-width: 7px
+    }
+    #how-it-works>.inner>article .timeline .flag .inner strong {
+        height: 16px;
+        font-size: 13px;
+        line-height: 16px
+    }
+    #how-it-works>.inner>article .timeline .flag#day-1 .inner {
+        margin-bottom: -20px
+    }
+    #how-it-works>.inner>article .timeline .flag#day-14-mobile {
+        margin-top: -11px;
+        margin-bottom: -26px
+    }
+    #how-it-works>.inner>article .timeline .bar {
+        display: none
+    }
+    #how-it-works>.inner>article .timeline .step {
+        width: 100%;
+        height: auto;
+        clear: both
+    }
+    #how-it-works>.inner>article .timeline .step .marker {
+        display: none
+    }
+    #how-it-works>.inner>article .timeline .step .inner {
+        padding: 30px 25px 25px
+    }
+    #how-it-works>.inner>article .timeline .step .inner:after {
+        top: 0;
+        border-bottom: none;
+        border-top: 15px solid #fff
+    }
+    #how-it-works>.inner>article .timeline .step .inner .icon {
+        background: none;
+        display: none
+    }
+    #how-it-works>.inner>article .timeline .step .inner h5 {
+        font-size: 1.8em;
+        margin: 0 0 10px !important
+    }
+    #how-it-works>.inner>article .timeline .step .inner p {
+        font-size: 1.2em;
+        text-align: center
+    }
+    #how-it-works>.inner>article .timeline .step.pos-1 {
+        padding-top: 10px
+    }
+    #how-it-works>.inner>article .timeline .step.pos-1 .inner:after {
+        border-top: none
+    }
+    #how-it-works>.inner>article .timeline .step.pos-2 .inner:after {
+        border-top-color: rgba(255, 255, 255, 0.07)
+    }
+    #how-it-works>.inner>article .timeline .step.pos-3 .inner:after {
+        border-top-color: rgba(255, 255, 255, 0.07)
+    }
+    #how-it-works>.inner>article .timeline .step.pos-4 .inner:after {
+        border-top-color: rgba(255, 255, 255, 0.06)
+    }
+    #how-it-works>.inner>article .timeline .step.pos-5 {
+        padding-top: 10px
+    }
+    #how-it-works>.inner>article .timeline .step.pos-5 .inner:after {
+        display: none
+    }
+    #how-it-works>.inner>article .timeline .footnote {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center
+    }
+    #how-it-works>.inner>article .timeline .footnote:after {
+        display: none
+    }
+    #how-it-works>.inner>article .timeline .footnote strong {
+        font-size: 1.2em;
+        margin-bottom: 5px
+    }
+    #how-it-works>.inner>article .timeline .step .icon {
+        background-image: url(//assets-impress-services.s3.amazonaws.com/assets/timeline-steps-sprite.retina-356b6d7d00fd14206f6e38112799c5f9.png)
+    }
 }
 
