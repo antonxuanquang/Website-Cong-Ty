@@ -436,8 +436,9 @@
 
 /*form styles*/
 #msform {
-    width: 800px;
+    width: 600px;
     margin: 50px auto;
+    padding-bottom: 250px;
     text-align: center;
     position: relative;
 }
@@ -453,7 +454,7 @@
     margin: 0 10%;
     
     /*stacking fieldsets above each other*/
-    position: relative;
+    position: absolute;
 }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
