@@ -4,6 +4,11 @@
 /* ends font format*/
 
 
+/* customize layout*/
+
+/* ends customize layout*/
+
+
 /* hidden */
 
 .hidden {
@@ -114,6 +119,12 @@
 #how-it-works>.inner>article .timeline .footnote strong em {
     color: white
 }
+#how-it-works>.inner {
+  position: relative;
+  max-width: 1050px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 /* ends How it works*/
 
@@ -181,14 +192,14 @@
 }
 .timeline .step .marker {
     position: absolute;
-    top: -47px;
-    left: 50%;
-    width: 15px;
-    height: 15px;
+    top: -50px;
+    left: 48%;
+    width: 30px;
+    height: 30px;
     margin-left: -12px;
     background: white;
     border: 5px solid transparent;
-    border-radius: 15px
+    border-radius: 50%;
 }
 .timeline .step .inner {
     position: relative;
