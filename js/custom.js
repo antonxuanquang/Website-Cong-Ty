@@ -31,10 +31,10 @@ $(".next").click(function(){
 			opacity = 1 - now;
 			current_fs.css({'transform': 'scale('+scale+')'});
 			next_fs.css({'left': left, 'opacity': opacity});
-			var heightTrans = next_fs.height() - current_fs.height();
-			
+		
+			// console.log(current_fs);
+			// console.log(current_fs.parents("#contact").height());
 
-			console.log(heightTrans);
 		}, 
 		duration: 800, 
 		complete: function(){
@@ -46,6 +46,14 @@ $(".next").click(function(){
 	});
 	//show the next fieldset
 	next_fs.show(); 
+	// change the height of container
+	var heightTrans = next_fs.height() - current_fs.height();
+	console.log(heightTrans);
+	current_fs.parents("#contact").animate({
+		height: '+=' + heightTrans,
+		duration: 1000,
+		easing: 'easeInOutBack'
+	});
 });
 
 $(".previous").click(function(){
@@ -58,8 +66,6 @@ $(".previous").click(function(){
 	//de-activate current step on progressbar
 	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 	
-	//show the previous fieldset
-	previous_fs.show(); 
 	//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
 		step: function(now, mx) {
@@ -81,6 +87,16 @@ $(".previous").click(function(){
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'
 	});
+
+	//show the previous fieldset
+	previous_fs.show(); 
+	// change the height of container
+	var heightTrans = previous_fs.height() - current_fs.height();
+	console.log(heightTrans);
+	current_fs.parents("#contact").animate({
+		height: '+=' + heightTrans,
+		duration: 1000,
+		easing: 'easeInOutBack'});
 });
 
 $(".submit").click(function(){
