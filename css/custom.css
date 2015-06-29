@@ -403,11 +403,11 @@
         display: none
     }
     #how-it-works>.inner>article .timeline .step .inner h5 {
-        font-size: 0.9em;
+        font-size: 1.2em;
         margin: 0 0 10px !important
     }
     #how-it-works>.inner>article .timeline .step .inner p {
-        font-size: 1.2em;
+        font-size: 0.9em;
         text-align: center
     }
     #how-it-works>.inner>article .timeline .step.pos-1 {
