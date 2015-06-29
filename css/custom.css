@@ -304,6 +304,8 @@
     font-style: normal
 }
 
+
+
 /* end Timeline*/
 
 
@@ -459,7 +461,7 @@
     border-radius: 3px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 30px;
-    
+  
     box-sizing: border-box;
     width: 80%;
     margin: 0 10%;
@@ -473,19 +475,25 @@
 }
 /*inputs*/
 #msform input, #msform textarea {
+   
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 30px;
+    height: 13px;
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
     font-size: 13px;
+   
 }
+
+
 /*buttons*/
 #msform .action-button {
     width: 100px;
+    height: auto;
     background: #27AE60;
     font-weight: bold;
     color: white;
@@ -499,16 +507,19 @@
     box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/
-.fs-title {
-    font-size: 15px;
+h2.fs-title {
+    font-weight: normal;
+    font-size: 30px;
     text-transform: uppercase;
-    color: #2C3E50;
-    margin-bottom: 10px;
+    text-align: center;
+    color: black !important;
+    margin-bottom: 15px;
 }
 .fs-subtitle {
     font-weight: normal;
-    font-size: 13px;
-    color: #666;
+    font-size: 14px;
+    text-align: center;
+    color: black;
     margin-bottom: 20px;
 }
 /*progressbar*/
@@ -560,6 +571,9 @@
     background: #27AE60;
     color: white;
 }
+
+
+
 
 
 

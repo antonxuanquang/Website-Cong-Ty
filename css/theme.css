@@ -2079,7 +2079,7 @@ aside ul.nav-list > li > a {
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer a {
-	color: #FFF !important;
+	color: #FFF;
 }
 
 #footer h4 {
@@ -2115,6 +2115,7 @@ aside ul.nav-list > li > a {
 
 #footer .container input:focus {
 	box-shadow: none;
+
 }
 
 #footer .footer-ribbon {
