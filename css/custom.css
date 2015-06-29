@@ -319,6 +319,14 @@
     }
 }
 
+#how-it-works>.inner>article .timeline .step .inner h5 {
+        font-size: 0.9em;
+        margin: 0 0 10px !important
+    }
+#how-it-works>.inner>article .timeline .step .inner p {
+        font-size: 0.9em;
+        text-align: center
+    }
 @media (max-width: 767px) {
     #how-it-works>.inner>header {
         padding-top: 40px;
@@ -395,7 +403,7 @@
         display: none
     }
     #how-it-works>.inner>article .timeline .step .inner h5 {
-        font-size: 1.8em;
+        font-size: 0.9em;
         margin: 0 0 10px !important
     }
     #how-it-works>.inner>article .timeline .step .inner p {
