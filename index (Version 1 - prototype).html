@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 
@@ -99,9 +99,9 @@
 <!-- end Header -->
 
 			<div role="main" class="main">
-<!-- Intro -->
-	<!-- Picture and words -->
+<!-- Intro -->				
 				<div class="slider-container" id = "home">
+	<!-- Picture and words -->
 					<div class="slider" id="revolutionSlider" data-plugin-revolution-slider data-plugin-options='{"startheight": 600}'>
 						<ul>
 							<li data-transition="fade" data-slotamount="10" data-masterspeed="300">
@@ -152,7 +152,7 @@
 
 									<a class="tp-caption customin btn btn-lg btn-primary main-button" data-hash href="#company"
 										data-x="150" 
-                                    	data-hoffset="0"
+                                       data-hoffset="0"
 										data-y="350"
 										data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
 										data-speed="800"
@@ -165,42 +165,45 @@
 							</li>
 						</ul>
 					</div>
-				</div>
 	<!-- end Picture and words -->
-	
-	<!-- Landmarks -->
-				<div class="container">
-					<div class="row center counters">
-						<div class="col-md-3 col-sm-6">
-							<i class="fa fa-user"></i>
-							<strong data-to="13000" data-append="+">0</strong>
-							<label>Happy Clients</label>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<i class="fa fa-globe"></i>
-							<strong data-to="15">0</strong>
-							<label>Countries</label>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<i class="fa fa-dollar"></i>
-							<strong data-to="5000" data-append="+">5000</strong>
-							<label>per Project</label>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<i class="fa fa-star"></i>
-							<strong data-to="9">9.5</strong>
-							<label>Overall Score</label>
-						</div>
+
+	<!-- Quotes -->
+					<div class = "home-intro" id = "home-intro">
+						<div class = "container-fluid">
+							<div class="row center">
+								<div class="owl-carousel" data-plugin-options='{"items": 1, "autoplay": true, "autoplayTimeout": 6000}'>
+									<div class="col-md-8 col-md-offset-2">
+										<p>
+											"Hãy tìm kiếm niềm đam mê đích thực của bạn
+                                            <br /> Hãy làm điều bạn thích và tạo nên sự khác biệt"
+											<span><em>Steve Jobs</em></span>
+										</p>
+									</div>
+									<div class="col-md-8 col-md-offset-2">
+										<p>
+											"Trong một thế giới đang thay đổi rất nhanh chóng,
+                                            <br /> lộ trình duy nhất đưa bạn đến thất bại là không dám mạo hiểm"
+											<span><em>Mark Zuckerberg</em></span>
+										</p>
+									</div>
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <p>
+                                            "Kiên trì theo đuổi niềm đam mê là 1 trong những yếu tố quyết định dẫn đến thành công"
+                                            <span><em>Bill Gates</em></span>
+                                        </p>
+                                    </div>
+								</div>
+							</div>
+						</div>	
 					</div>
+	<!-- end Quotes -->
 				</div>
-	<!-- ends Landmarks -->
-				<hr class = "tall" />
 <!-- end Intro -->
 
 <!-- Our company -->
-	
-	<!-- CarpTech is.... -->
+
 				<div class="container">
+	<!-- CarpTech is.... -->
 					<div class = "row" id = "company">
 						<div class = "col-md-12">
 							<h1 class="short word-rotator-title">
@@ -216,95 +219,197 @@
 								</strong>. Within a year, we have done
 							</h1>
 						</div>
-						<h4 class = "col-md-8 tall" style = "color : grey"> Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here 
-						</h4>
 					</div>
-				</div>
 	<!-- end CarpNet is.... -->
 
-	<!-- SharePoint Description -->
-				<div class = "container">
-					<hr class="visible-sm visible-xs tall" />
-					<div class = "row" >
-						<div class="center">
-							<div class="circular-bar">
-								<div class="circular-bar-chart" data-percent="95" data-plugin-options='{"barColor": "#0088CC"}'>
-									<strong>SharePoint</strong>
-									<label>95%</label>
-								</div>
-							</div>
-						</div>
-					</div>							
-					<div class = "row">
-						<div class = "col-md-6 center">
-							<div class="circular-bar">
-								<div class="circular-bar-chart" data-percent="90" data-plugin-options='{"barColor": "#0088CC"}'>
-									<strong>ERP</strong>
-									<label>90%</label>
-								</div>
-							</div>
-						</div>
-						<div class = "col-md-6 center">
-							<div class="circular-bar">
-								<div class="circular-bar-chart" data-percent="100" data-plugin-options='{"barColor": "#0088CC"}'>
-									<strong>Mobile/Web Apps</strong>
-									<label>100%</label>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	<!-- Product -->
+					<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
+						<li data-option-value="*" class="active"><a href="#">Show All</a></li>
+						<li data-option-value=".websites"><a href="#">Websites</a></li>
+						<li data-option-value=".logos"><a href="#">Logos</a></li>
+						<li data-option-value=".brands"><a href="#">Brands</a></li>
+					</ul>
 
-				<div class = "container">
-					<div class = "col-md-8">
-						<img class="img-rounded img-responsive" src="img/blog/blog-medium-image-3.jpg">
-					</div>
-					<div class = "col-md-4 center">
-						<h3>SharePoint</h3>
-						<ul class="list icons list-unstyled">
-								<li><i class="fa fa-check"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-								<li><i class="fa fa-check"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
-								<li><i class="fa fa-check"></i> Fusce sit amet orci quis arcu vestibulum vestibulum sed ut felis. Phasellus in risus quis lectus iaculis vulputate id quis nisl.</li>
+					<hr />
+
+					<div class="row">
+						<ul class="portfolio-list sort-destination lightbox" data-sort-id="portfolio" data-plugin-options='{"delegate": "a", "type": "inline", "gallery": {"enabled": true}}'>
+						
+							<div id="popupVideo" class="popup-inline-content">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&amp;wmode=opaque"></iframe>
+								</div>
+							</div>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupVideo" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">SEO</span>
+											<span class="thumb-info-type">Website</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item brands">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupProject" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-1.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">Okler</span>
+											<span class="thumb-info-type">Brand</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item logos">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupVideo" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-2.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">The Fly</span>
+											<span class="thumb-info-type">Logo</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupProject" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-3.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">The Code</span>
+											<span class="thumb-info-type">Website</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupVideo" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-3.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">The Code</span>
+											<span class="thumb-info-type">Website</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupVideo" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">SEO</span>
+											<span class="thumb-info-type">Website</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item brands">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupProject" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-1.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">Okler</span>
+											<span class="thumb-info-type">Brand</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 col-sm-6 col-xs-12 isotope-item logos">
+								<div class="portfolio-item img-thumbnail">
+									<a href="#popupVideo" class="thumb-info">
+										<img alt="" class="img-responsive" src="img/projects/project-2.jpg">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">The Fly</span>
+											<span class="thumb-info-type">Logo</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
 						</ul>
-						<a class = "btn btn-lg btn-primary"> Click here to see DEMO </a>
 					</div>
+	<!-- end Products -->
 				</div>
-	<!-- ends SharePoint Description -->
 
-	<!-- ERP and Web/Mobile Apps -->
-				
-	<!-- ends ERP and Web/Mobile Apps -->
 
-	<!-- Quotes -->
-				<div class = "home-intro" id = "home-intro">
-					<div class = "container-fluid">
-						<div class="row center">
-							<div class="owl-carousel" data-plugin-options='{"items": 1, "autoplay": true, "autoplayTimeout": 6000}'>
-								<div class="col-md-8 col-md-offset-2">
-									<p>
-										"Hãy tìm kiếm niềm đam mê đích thực của bạn
-                                        <br /> Hãy làm điều bạn thích và tạo nên sự khác biệt"
-										<span><em>Steve Jobs</em></span>
-									</p>
-								</div>
-								<div class="col-md-8 col-md-offset-2">
-									<p>
-										"Trong một thế giới đang thay đổi rất nhanh chóng,
-                                        <br /> lộ trình duy nhất đưa bạn đến thất bại là không dám mạo hiểm"
-										<span><em>Mark Zuckerberg</em></span>
-									</p>
-								</div>
-                                <div class="col-md-8 col-md-offset-2">
-                                    <p>
-                                        "Kiên trì theo đuổi niềm đam mê là 1 trong những yếu tố quyết định dẫn đến thành công"
-                                        <span><em>Bill Gates</em></span>
-                                    </p>
-                                </div>
+	<!-- Partners -->
+				<div class = "container">
+					<div class="row center">
+						<div class="col-md-12">
+							<h2 class="short word-rotator-title">
+								We're not the only ones
+								<strong>
+									<span class="word-rotate" data-plugin-options='{"delay": 3500, "animDelay": 400}'>
+										<span class="word-rotate-items">
+											<span>satisfied</span>
+											<span>happy</span>
+											<span>excited</span>
+										</span>
+									</span>
+								</strong>.
+								Our customers also say so.
+							</h2>
+						</div>
+					</div>
+					<div class="row center">
+						<div class="owl-carousel" data-plugin-options='{"items": 4, "autoplay": true, "autoplayTimeout": 2000}'>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-1.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-2.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-3.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-4.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-5.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-6.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-4.png" alt="">
+							</div>
+							<div>
+								<img class="img-responsive" src="img/logos/logo-2.png" alt="">
 							</div>
 						</div>
-					</div>	
+					</div>
 				</div>
-	<!-- end Quotes -->
+
+				<hr class = "tall" />
+
+	<!-- end Partners -->
 
 <!-- end Our Company -->
 
@@ -403,7 +508,50 @@
 						</h1>
 						<h4 class = "col-md-6 tall" style = "color : grey"> Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here Some text over here 
 						</h4>
+					</div>
+	<!-- end Team Intro -->
+					<hr class = "tall" />
+	<!-- Open ERP -->
+					<div class="row featured-boxes">
+						<div class="col-md-12">
+							<h3 class = "short"> Open ERP</h3>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="featured-box featured-box-primary">
+								<div class="box-content">
+									<i class="icon-featured fa fa-user"></i>
+									<h4>Loved by Customers</h4>
+									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="featured-box featured-box-secundary">
+								<div class="box-content">
+									<i class="icon-featured fa fa-book"></i>
+									<h4>Well Documented</h4>
+									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="featured-box featured-box-tertiary">
+								<div class="box-content">
+									<i class="icon-featured fa fa-trophy"></i>
+									<h4>Winner</h4>
+									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+	<!-- end Open ERP -->
+
+	<!-- Share Point and Web/Mobile apps -->
+					<div class="row">
+
 						<div class="col-md-6">
+							<h3 class = "tall"> Share Point </h3>
 							<div class="progress-bars">
 								<div class="progress-label">
 									<span>Skill</span>
@@ -440,9 +588,44 @@
 							</div>
 
 						</div>
-					</div>
-	<!-- end Team Intro -->
 
+						<div class="col-md-6">
+							<h3>Web/Mobile apps</h3>
+							<hr class="visible-sm visible-xs tall" />
+
+							
+							<div class = "row">
+								<div class = "col-md-6 center">
+									<div class="circular-bar">
+										<div class="circular-bar-chart" data-percent="90" data-plugin-options='{"barColor": "#0088CC"}'>
+											<strong>Skill</strong>
+											<label>90%</label>
+										</div>
+									</div>
+								</div>
+								<div class = "col-md-6 center">
+									<div class="circular-bar">
+										<div class="circular-bar-chart" data-percent="100" data-plugin-options='{"barColor": "#0088CC"}'>
+											<strong>Skill</strong>
+											<label>100%</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class = "row" >
+								<div class="center">
+									<div class="circular-bar">
+										<div class="circular-bar-chart" data-percent="75" data-plugin-options='{"barColor": "#0088CC"}'>
+											<strong>Skill</strong>
+											<label>75%</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	<!-- end Share Point and Web/Mobile apps -->
+		
 	<!-- Team members -->
 					<div class="row">
 						<div class="col-md-12">
@@ -604,13 +787,8 @@
                     <div class="row">
                         <input type="radio" name="job" value="b">Answer 2
                     </div>
-                	<div class="row">
-                        <input type="radio" name="job" value="a">Answer 3
-                    </div>
-                    <div class="row">
-                        <input type="radio" name="job" value="b">Answer 4
-                    </div>    
-                
+                    
+                   
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
                 </fieldset>
@@ -638,12 +816,6 @@
                     <div class="row">
                         <input type="radio" name="job" value="b">Answer 2
                     </div>
-                    <div class="row">
-                        <input type="radio" name="job" value="a">Answer 3
-                    </div>
-                    <div class="row">
-                        <input type="radio" name="job" value="b">Answer 4
-                    </div> 
                     
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
@@ -677,51 +849,29 @@
                             </div>
 
                             <!--Contact us-->
-                            <div class="col-md-offset-1 col-md-4">
-                                <div class="contact-details">
-                                    <h4>Contact Us</h4>
-                                    <ul class="contact">
-                                       
-                                        <li>
-                                            <p>
-                                                <i class="fa fa-map-marker"></i>
-                                                <strong>Address:</strong> 19th Floor, Sector A, Indochina Building,
-                                                <br />4 Nguyen Dinh Chieu, Dakao, District 1, HCMC
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                <i class="fa fa-phone">
-                                                </i>
-                                                <strong>Phone:</strong> +84937 284 678
-                                            </p>
-                                        </li>
-                                        <li>
-                                        <p>
-                                            <i class="fa fa-envelope">
-                                            </i> 
-                                            <strong>Email:</strong> nhantran@carp.vn
-                                            
-                                        </p>
-                                        </li>
-                                    </ul>
+                            <div class="col-md-4 ">
+								<div class="contact-details">
+									<h4>Contact Us</h4>
+									<ul>
+										<li><p><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-7890</p></li>
+										<li><p><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
+										<li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</p></li>
+									</ul>
+								</div>
+							</div>
 
-                                    </ul>
-
-                                </div>
-                            </div>
 
                             <!--Follow us-->
-                            <div class="col-md-offset-1 col-md-2" >
-                                <h4>Follow Us</h4>
-                                <div class="social-icons">
-                                    <ul class="social-icons">
-                                        <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
-                                        <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
-                                        <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <div class="col-md-offset-3 col-md-2">
+							<h4>Follow Us</h4>
+							<div class="social-icons">
+								<ul class="social-icons">
+									<li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" data-tooltip title="Facebook">Facebook</a></li>
+									<li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" data-tooltip title="Twitter">Twitter</a></li>
+									<li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" data-tooltip title="Linkedin">Linkedin</a></li>
+								</ul>
+							</div>
+						</div>
 
 						</div>
 					</div>
