@@ -469,11 +469,10 @@
     border: 0 none;
     border-radius: 3px;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-  
+    padding: 20px 50px;
     box-sizing: border-box;
     width: 80%;
-    margin: 0 10%;
+    margin: 0 3%;
     
     /*stacking fieldsets above each other*/
     position: absolute;
@@ -489,18 +488,13 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     margin-bottom: 10px;
-    width: 30px;
-    height: 13px;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
     font-size: 13px;
    
-}
-
-#msform input #fs-input, #msform textarea #fs-input {
-    width: 100%;
-    height: 30px;
 }
 
 /*buttons*/
@@ -519,11 +513,28 @@
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
+
+/*radio buttons*/
+.fs-option input, .fs-option textarea{
+    line-height: 30px;
+    height: 13px !important;
+    width: 30px !important;
+}
+
+.fs-option {
+    text-align: left !important;
+}
+
+.fs-option:hover {
+    background: grey;
+    cursor: pointer;
+    color: white;
+}
+
 /*headings*/
 h2.fs-title {
     font-weight: normal;
     font-size: 30px;
-    text-transform: uppercase;
     text-align: center;
     color: black !important;
     margin-bottom: 15px;
@@ -535,6 +546,7 @@ h2.fs-title {
     color: black !important;
     margin-bottom: 20px;
 }
+
 /*progressbar*/
 #progressbar {
     margin-bottom: 30px;
@@ -633,7 +645,7 @@ h2.fs-title {
 
 /* Where all the MAGIC happens: */
 .icon:hover {
-  
+
 }
 .icon:hover .menu {
   transition: transform 0.4s 0.08s, z-index   0s  0.5s;
@@ -671,15 +683,31 @@ h2.fs-title {
 /* END .icon:hover */
 .unit {
   position: absolute;
-  background: black;
+  background: #0088cc;
   font-size: 60%;
   text-decoration: none;
   width: 180px;
   height: 90px;
   line-height: 90px;
-  color: dodgerblue;
+  color: white;
   border-radius: 5px;
   transition: 0.6s;
+}
+
+@media (max-width: 767px) {
+    .icon {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .timeline .pos-1,
+    .timeline .pos-2,
+    .timeline .pos-3,
+    .timeline .pos-4,
+    .timeline .pos-5 {
+        height: 250px
+    }
 }
 
 /*ends Product description*/
