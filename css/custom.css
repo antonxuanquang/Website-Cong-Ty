@@ -61,38 +61,39 @@
 /* how it works*/
 #how-it-works {
     background: #008dd8;
-    color: white
+    color: white;
+    padding: 100px 0px;
 }
 #how-it-works>.inner>header {
     padding-top: 80px;
-    padding-bottom: 70px
+    padding-bottom: 70px;
 }
 #how-it-works>.inner>header h2 {
     color: white;
     font-family: 'museo-sans-n5', 'museo-sans', sans-serif;
     font-size: 4.2em;
-    font-weight: 500
+    font-weight: 500;
 }
 #how-it-works>.inner>header h2 strong {
     font-family: 'museo-sans-n9', 'museo-sans', sans-serif;
-    font-weight: 900
+    font-weight: 900;
 }
 #how-it-works>.inner>header h3 {
-    color: #b3dbf1
+    color: #b3dbf1;
 }
 #how-it-works>.inner>article h5 {
-    color: white
+    color: white;
 }
 #how-it-works>.inner>article p {
     color: white;
-    margin: 0 0 60px
+    margin: 0 0 60px;
 }
 #how-it-works>.inner>article .timeline .step .marker {
-    border-color: #008dd8
+    border-color: #008dd8;
 }
 #how-it-works>.inner>article .timeline .step .icon {
     background-image: url(//assets-impress-services.s3.amazonaws.com/assets/timeline-steps-sprite-e3b9b46cdbbf694e846c3f89464ec73e.png);
-    background-size: 150px 325px
+    background-size: 150px 325px;
 }
 #how-it-works>.inner>article .timeline .step.pos-1 .icon {
     background-position: 0 0
@@ -497,6 +498,10 @@
    
 }
 
+#msform input #fs-input, #msform textarea #fs-input {
+    width: 100%;
+    height: 30px;
+}
 
 /*buttons*/
 #msform .action-button {
@@ -527,7 +532,7 @@ h2.fs-title {
     font-weight: normal;
     font-size: 14px;
     text-align: center;
-    color: black;
+    color: black !important;
     margin-bottom: 20px;
 }
 /*progressbar*/
@@ -582,7 +587,102 @@ h2.fs-title {
 
 
 
+/* Product description */
 
+.icon, .icon>img {
+  position: relative;
+  cursor: pointer;
+  margin: auto;
+  color: blue;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  font-size: 2.75em;
+  font-weight: bold;
+  transition: 0.24s 0.2s;
+}
+
+.icon>a, .icon>ul, .icon>li {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  border: 150px solid transparent;
+  cursor: default;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 1.4s 0.07s;
+  z-index: -5;
+}
+
+.spread {
+  position: absolute;
+  top: -235px;
+  left: -200px;
+  right: -200px;
+  transform-origin: 200px 200px;
+  transition: all 0.5s 0.1s;
+}
+
+/* Where all the MAGIC happens: */
+.icon:hover {
+  
+}
+.icon:hover .menu {
+  transition: transform 0.4s 0.08s, z-index   0s  0.5s;
+  transform: scale(1);
+  z-index: 5;
+}
+.icon:hover .spread, .icon:hover .unit {
+  transition: all 0.6s;
+}
+.icon:hover .spread:nth-child(1) {
+  transition-delay: 0.02s;
+  transform: rotate(270deg);
+}
+.icon:hover .spread:nth-child(1) .unit {
+  transition-delay: 0.04s;
+  transform: rotate(90deg);
+}
+.icon:hover .spread:nth-child(2) {
+  transition-delay: 0.04s;
+  transform: rotate(390deg);
+}
+.icon:hover .spread:nth-child(2) .unit {
+  transition-delay: 0.08s;
+  transform: rotate(-30deg);
+}
+.icon:hover .spread:nth-child(3) {
+  transition-delay: 0.06s;
+  transform: rotate(510deg);
+}
+.icon:hover .spread:nth-child(3) .unit {
+  transition-delay: 0.12s;
+  transform: rotate(-150deg);
+}
+
+/* END .icon:hover */
+.unit {
+  position: absolute;
+  background: black;
+  font-size: 60%;
+  text-decoration: none;
+  width: 180px;
+  height: 90px;
+  line-height: 90px;
+  color: dodgerblue;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+
+/*ends Product description*/
 
 
 
