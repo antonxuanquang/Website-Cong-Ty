@@ -517,7 +517,7 @@
 /*radio buttons*/
 .fs-option input, .fs-option textarea{
     line-height: 30px;
-    height: 13px !important;
+    height: 15px !important;
     width: 30px !important;
 }
 
@@ -525,7 +525,7 @@
     text-align: left !important;
 }
 
-.fs-option:hover {
+.fs-option:hover, .fs-option input {
     background: grey;
     cursor: pointer;
     color: white;

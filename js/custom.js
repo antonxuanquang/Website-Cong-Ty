@@ -48,7 +48,6 @@ $(".next,.fs-option").click(function(){
 	next_fs.show(); 
 	// change the height of container
 	var heightTrans = next_fs.height() - current_fs.height();
-	console.log(heightTrans);
 	current_fs.parents("#contact").animate({
 		height: '+=' + heightTrans,
 		duration: 1000,
@@ -92,12 +91,16 @@ $(".previous").click(function(){
 	previous_fs.show(); 
 	// change the height of container
 	var heightTrans = previous_fs.height() - current_fs.height();
-	console.log(heightTrans);
 	current_fs.parents("#contact").animate({
 		height: '+=' + heightTrans,
 		duration: 1000,
 		easing: 'easeInOutBack'});
 });
+
+$(".fs-option").click(function(){
+	var selectRow = $(this).find("input");
+	selectRow.attr('checked', true);
+})
 
 $(".submit").click(function(){
 	return false;

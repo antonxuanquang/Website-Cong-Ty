@@ -564,21 +564,21 @@
                     <!-- Multistep form -->
                     <form id="msform">
                         <!-- progressbar -->
-                        <ul id="progressbar">
+                        <!-- <ul id="progressbar">
                             <li class="active"></li>
                             <li></li>
                             <li></li>
                             <li></li>
-                        </ul>
+                        </ul> -->
                         <!-- fieldsets -->
                         <fieldset>
 
                             <h2 class="fs-title">Tell us about yourself</h2>
                             <div class="row fs-option">
-                                <input type="radio" name="job" value="a">Customer
+                                <input type="radio" name="job" value="a" id="customer">Customer
                             </div>
                             <div class="row fs-option">
-                                <input type="radio" name="job" value="b">Developer
+                                <input type="radio" name="job" value="b" id="developer">Developer
                             </div>
                                 <input type="button" name="next" class="next action-button" value="Next" />
                         </fieldset>
@@ -586,16 +586,16 @@
                     <h2 class="fs-title">Which project are you interested in?</h2>
                     
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="a">SharePoint
+                        <input type="radio" name="project" value="a">SharePoint
                     </div>
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="b">ERP
+                        <input type="radio" name="project" value="b">ERP
                     </div>
                 	<div class="row fs-option">
-                        <input type="radio" name="job" value="a">Mobile/Web Apps
+                        <input type="radio" name="project" value="c">Mobile/Web Apps
                     </div>
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="b">Another
+                        <input type="radio" name="project" value="d">Another
                     </div>    
                 
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -605,13 +605,13 @@
                     <h2 class="fs-title">How long the project would be?</h2>
                     <h3 class="fs-subtitle"></h3>
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="a">Short-term &#40;&lt;6 months&#41;
+                        <input type="radio" name="length" value="a">Short-term &#40;&lt;6 months&#41;
                     </div>
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="b">Average &#40;6-12 months&#41;
+                        <input type="radio" name="length" value="b">Average &#40;6-12 months&#41;
                     </div>
                     <div class="row fs-option">
-                        <input type="radio" name="job" value="b">Average &#40;&gt;1 year&#41;
+                        <input type="radio" name="length" value="c">Average &#40;&gt;1 year&#41;
                     </div>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" />
@@ -620,8 +620,8 @@
                     <h2 class="fs-title">Personal Details</h2>
                     <input type="text" name="fname" placeholder="First Name" />
                     <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <textarea name="address" placeholder="Address"></textarea>
+                    <input type="text" name="phone" placeholder="Email" />
+                    <textarea name="message" placeholder="Message"></textarea>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="submit" name="submit" class="submit action-button" value="Submit" />
                 </fieldset>
