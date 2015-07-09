@@ -601,7 +601,7 @@ h2.fs-title {
 
 /* Product description */
 
-.icon, .icon>img {
+.icon, .icon img {
   position: relative;
   cursor: pointer;
   margin: auto;
@@ -615,11 +615,15 @@ h2.fs-title {
   transition: 0.24s 0.2s;
 }
 
-.icon>a, .icon>ul, .icon>li {
+.icon a, .icon ul, .icon li {
   margin: 0;
   outline: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
+}
+
+.lightbox {
+    list-style-type: none;
 }
 
 .menu {
@@ -648,18 +652,17 @@ h2.fs-title {
 
 }
 .icon:hover .menu {
-  transition: transform 0.4s 0.08s, z-index   0s  0.5s;
+  transition: transform 0.4s 0.08s;
   transform: scale(1);
-  z-index: 5;
 }
 .icon:hover .spread, .icon:hover .unit {
   transition: all 0.6s;
 }
-.icon:hover .spread:nth-child(1) {
+.icon:hover .spread:nth-child(4) {
   transition-delay: 0.02s;
   transform: rotate(270deg);
 }
-.icon:hover .spread:nth-child(1) .unit {
+.icon:hover .spread:nth-child(4) .unit {
   transition-delay: 0.04s;
   transform: rotate(90deg);
 }
@@ -694,19 +697,9 @@ h2.fs-title {
   transition: 0.6s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1340px) {
     .icon {
         margin-bottom: 150px;
-    }
-}
-
-@media (max-width: 1023px) {
-    .timeline .pos-1,
-    .timeline .pos-2,
-    .timeline .pos-3,
-    .timeline .pos-4,
-    .timeline .pos-5 {
-        height: 250px
     }
 }
 
