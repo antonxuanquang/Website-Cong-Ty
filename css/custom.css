@@ -91,25 +91,13 @@
 #how-it-works>.inner>article .timeline .step .marker {
     border-color: #008dd8;
 }
-#how-it-works>.inner>article .timeline .step .icon {
-    background-image: url(//assets-impress-services.s3.amazonaws.com/assets/timeline-steps-sprite-e3b9b46cdbbf694e846c3f89464ec73e.png);
-    background-size: 150px 325px;
+#how-it-works>.inner>article .timeline .step .tl-icon {
+    height:72px; 
+    width: 72px; 
+    border-radius: 50%; 
+    margin-bottom:5px;
 }
-#how-it-works>.inner>article .timeline .step.pos-1 .icon {
-    background-position: 0 0
-}
-#how-it-works>.inner>article .timeline .step.pos-2 .icon {
-    background-position: 0 -65px
-}
-#how-it-works>.inner>article .timeline .step.pos-3 .icon {
-    background-position: 0 -130px
-}
-#how-it-works>.inner>article .timeline .step.pos-4 .icon {
-    background-position: 0 -195px
-}
-#how-it-works>.inner>article .timeline .step.pos-5 .icon {
-    background-position: 0 -260px
-}
+
 #how-it-works>.inner>article .timeline .footnote {
     height: auto;
     padding-bottom: 65px
@@ -399,7 +387,7 @@
         border-bottom: none;
         border-top: 15px solid #fff
     }
-    #how-it-works>.inner>article .timeline .step .inner .icon {
+    #how-it-works>.inner>article .timeline .step .inner .tl-icon {
         background: none;
         display: none
     }
