@@ -685,7 +685,7 @@ h2.fs-title {
   transition: 0.6s;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1240px) {
     .icon {
         margin-bottom: 150px;
     }
@@ -702,15 +702,16 @@ h2.fs-title {
     position: relative;
     margin: 70px 0 100px;
 }
+.tile {
+    width: 14.28571%;
+}
 .tiles .tile {
     display: inline-block;
-    width: 14.28571%;
     text-align: left;
     opacity: .99;
     overflow: hidden;
     position: relative;
     border-radius: 3px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 }
 .tiles .tile:before {
     content: '';
@@ -761,7 +762,6 @@ h2.fs-title {
 }
 .tiles .tile .details .info {
     line-height: 1.2;
-    margin-top: 5px;
     font-size: 12px;
 }
 .tiles .tile:hover:before,
@@ -789,6 +789,30 @@ h2.fs-title {
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }
+
+@media (max-width: 1240px) {
+    .tiles {
+        margin: 0 5%;
+        position: relative;
+        height: 700px;
+    }
+    .tile {
+        width: 25%;
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .tiles {
+        margin: 0 15%;
+        height: 1450px;
+    }
+    .tile {
+        width: 50%;
+        position: relative;
+    }
+}
+
 /* ends Team Introduction*/
 
 
