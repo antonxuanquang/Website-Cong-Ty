@@ -636,23 +636,12 @@ h2.fs-title {
 }
 
 /* Where all the MAGIC happens: */
-.icon:hover {
-
-}
 .icon:hover .menu {
   transition: transform 0.4s 0.08s;
   transform: scale(1);
 }
 .icon:hover .spread, .icon:hover .unit {
   transition: all 0.6s;
-}
-.icon:hover .spread:nth-child(4) {
-  transition-delay: 0.02s;
-  transform: rotate(270deg);
-}
-.icon:hover .spread:nth-child(4) .unit {
-  transition-delay: 0.04s;
-  transform: rotate(90deg);
 }
 .icon:hover .spread:nth-child(2) {
   transition-delay: 0.04s;
@@ -670,20 +659,35 @@ h2.fs-title {
   transition-delay: 0.12s;
   transform: rotate(-150deg);
 }
-
+.icon:hover .spread:nth-child(4) {
+  transition-delay: 0.02s;
+  transform: rotate(270deg);
+}
+.icon:hover .spread:nth-child(4) .unit {
+  transition-delay: 0.04s;
+  transform: rotate(90deg);
+}
 /* END .icon:hover */
 .unit {
   position: absolute;
   background: #0088cc;
-  font-size: 60%;
+  font-size: 50%;
   text-decoration: none;
   width: 180px;
   height: 90px;
-  line-height: 90px;
+  padding-top: 30px !important;
+  line-height: 1em;
   color: white;
   border-radius: 5px;
   transition: 0.6s;
 }
+
+.unit:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 @media (max-width: 1240px) {
     .icon {
