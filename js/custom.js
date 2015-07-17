@@ -9,6 +9,11 @@ var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 
+$(".fs-option").click(function(){
+	var selectRow = $(this).find("input");
+	selectRow.attr('checked', true);
+})
+
 $(".next,.fs-option").click(function(){
 	if(animating) return false;
 	animating = true;
@@ -97,11 +102,31 @@ $(".previous").click(function(){
 		easing: 'easeInOutBack'});
 });
 
-$(".fs-option").click(function(){
-	var selectRow = $(this).find("input");
-	selectRow.attr('checked', true);
-})
-
 $(".submit").click(function(){
-	return false;
-})
+	$( "#msform" ).submit(function( event ) {
+		var result = [];
+		var fieldsets = $("#msform").find("fieldset");
+		for (var i = 0; i < fieldsets.length - 1; i++) {
+			var options = $(fieldsets[i]).find(".fs-option > input:radio");
+			var value = null;
+			for (var j = 0; j < options.length; j++) {
+				if(options[j].checked) {
+					value = options[j].value;
+				}
+			}
+			var fieldName = options[0].getAttribute("name");
+			result[result.length] = fieldName + ": " + value;
+		}
+
+		personalDetails = $(fieldsets[fieldsets.length - 1]).find("input, textarea");
+		for (var i = 0; i < personalDetails.length; i++) {
+			var fieldName = personalDetails[i].getAttribute("name");
+			if(fieldName !== "submit" && fieldName !== "previous"){
+				var value = $(personalDetails[i]).val();
+				result[result.length] = fieldName + ": " + value;
+			}
+		}
+		console.log(result);
+		return false;
+	});
+});

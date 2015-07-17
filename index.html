@@ -391,10 +391,10 @@
 
 <!-- Our Team -->					
 	<!-- Team Intro -->
-				<div class="container" id = "team">
+				<div class="container" >
 					<div class="row tall">
 						<div class = "col-md-6">
-							<h1 class="col-md-12 word-rotator-title">
+							<h1 class="col-md-12 word-rotator-title" id = "team">
 									Meet our <strong>team</strong>
 							</h1>
 							<h4 class = "col-md-12 tall" style = "color : grey">When great minds come together, we do great things. CarpTech is young but it is a combination of passionate, humorous, and professional geeks, who promise to provide breakthrough solutions for your business.
@@ -475,13 +475,7 @@
 				        	<span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
 				        </div>
 				    </a>
-				    <a href="#popupProject" class="tile">
-				    	<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/216995/4.jpg" />
-				        <div class="details">
-				        	<span class="title">Lorem Ipsum Dolor</span>
-				        	<span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
-				        </div>
-				    </a>
+				    
 				</div>
 	<!-- end Team members -->	
 				<hr class = "tall" />
@@ -497,69 +491,68 @@
                         </div>
                     </div>
                     <!-- Multistep form -->
-                    <form id="msform" data-appear-animation="fadeInUp">
-                        <!-- progressbar -->
-                        <!-- <ul id="progressbar">
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul> -->
-                        <!-- fieldsets -->
-                        <fieldset>
-
-                            <h2 class="fs-title">Tell us about yourself</h2>
-                            <div class="row fs-option">
-                                <input type="radio" name="job" value="a" id="customer">Customer
-                            </div>
-                            <div class="row fs-option">
-                                <input type="radio" name="job" value="b" id="developer">Developer
-                            </div>
-                                <input type="button" name="next" class="next action-button" value="Next" />
-                        </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Which project are you interested in?</h2>
-                    
-                    <div class="row fs-option">
-                        <input type="radio" name="project" value="a">SharePoint
-                    </div>
-                    <div class="row fs-option">
-                        <input type="radio" name="project" value="b">ERP
-                    </div>
-                	<div class="row fs-option">
-                        <input type="radio" name="project" value="c">Mobile/Web Apps
-                    </div>
-                    <div class="row fs-option">
-                        <input type="radio" name="project" value="d">Another
-                    </div>    
-                
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">How long the project would be?</h2>
-                    <h3 class="fs-subtitle"></h3>
-                    <div class="row fs-option">
-                        <input type="radio" name="length" value="a">Short-term &#40;&lt;6 months&#41;
-                    </div>
-                    <div class="row fs-option">
-                        <input type="radio" name="length" value="b">Average &#40;6-12 months&#41;
-                    </div>
-                    <div class="row fs-option">
-                        <input type="radio" name="length" value="c">Average &#40;&gt;1 year&#41;
-                    </div>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
-                    <input type="text" name="fname" placeholder="First Name" />
-                    <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Email" />
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                </fieldset>
+                <form id="msform" data-appear-animation="fadeInUp" name = "msform">
+                    <!-- progressbar -->
+                    <!-- <ul id="progressbar">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul> -->
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <h2 class="fs-title">Tell us about yourself</h2>
+                        <div class="row fs-option">
+                            <input type="radio" name="status" value="Customer">Customer
+                        </div>
+                        <div class="row fs-option">
+                            <input type="radio" name="status" value="Developer">Developer
+                        </div>
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+	                <fieldset>
+	                    <h2 class="fs-title">Which project are you interested in?</h2>
+	                    
+	                    <div class="row fs-option">
+	                        <input type="radio" name="project" value="SharePoint">SharePoint
+	                    </div>
+	                    <div class="row fs-option">
+	                        <input type="radio" name="project" value="ERP">ERP
+	                    </div>
+	                	<div class="row fs-option">
+	                        <input type="radio" name="project" value="Mobile/Web Apps">Mobile/Web Apps
+	                    </div>
+	                    <div class="row fs-option">
+	                        <input type="radio" name="project" value="Another">Another
+	                    </div>    
+	                
+	                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+	                    <input type="button" name="next" class="next action-button" value="Next" />
+	                </fieldset>
+	                <fieldset>
+	                    <h2 class="fs-title">How long the project would be?</h2>
+	                    <h3 class="fs-subtitle"></h3>
+	                    <div class="row fs-option">
+	                        <input type="radio" name="length" value="<6 months">Short-term &#40;&lt;6 months&#41;
+	                    </div>
+	                    <div class="row fs-option">
+	                        <input type="radio" name="length" value="6-12 months">Average &#40;6-12 months&#41;
+	                    </div>
+	                    <div class="row fs-option">
+	                        <input type="radio" name="length" value=">1 year">Average &#40;&gt;1 year&#41;
+	                    </div>
+	                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+	                    <input type="button" name="next" class="next action-button" value="Next" />
+	                </fieldset>
+	                <fieldset>
+	                    <h2 class="fs-title">Personal Details</h2>
+	                    <input type="text" name="First Name" placeholder="First Name" required/>
+	                    <input type="text" name="Last Name" placeholder="Last Name" required/>
+	                    <input type="email" name="Email" placeholder="Email" required/>
+	                    <textarea name="Message" placeholder="Message" required></textarea>
+	                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+	                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+	                </fieldset>
                 </form>
                 <!-- ends Multistep form -->
 </div>

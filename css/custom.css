@@ -479,7 +479,6 @@
     width: 100%;
     height: auto;
     box-sizing: border-box;
-    font-family: montserrat;
     color: #2C3E50;
     font-size: 13px;
    
@@ -489,17 +488,18 @@
 #msform .action-button {
     width: 100px;
     height: auto;
-    background: #27AE60;
+    background: #0088cc;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 1px;
+    border-radius: 4px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+    background-color: #33A0D6;
+    /*box-shadow: 0 0 0 2px white, 0 0 0 3px #0088cc;*/
 }
 
 /*radio buttons*/
@@ -704,10 +704,10 @@ h2.fs-title {
     font-size: 0;
     text-align: center;
     position: relative;
-    margin: 70px 0 100px;
+    margin: 30px 0 100px;
 }
 .tile {
-    width: 14.28571%;
+    width: 16%;
 }
 .tiles .tile {
     display: inline-block;
@@ -715,7 +715,6 @@ h2.fs-title {
     opacity: .99;
     overflow: hidden;
     position: relative;
-    border-radius: 3px;
 }
 .tiles .tile:before {
     content: '';
@@ -735,6 +734,7 @@ h2.fs-title {
 .tiles .tile img {
     display: block;
     max-width: 100%;
+    width: 400px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
@@ -794,7 +794,7 @@ h2.fs-title {
     transition-delay: 0ms;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1000px) {
     .tiles {
         margin: 0 5%;
         position: relative;
@@ -809,7 +809,7 @@ h2.fs-title {
 @media (max-width: 767px) {
     .tiles {
         margin: 0 15%;
-        height: 1450px;
+        height: 1100px;
     }
     .tile {
         width: 50%;
