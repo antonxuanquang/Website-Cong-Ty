@@ -809,7 +809,7 @@ h2.fs-title {
 @media (max-width: 767px) {
     .tiles {
         margin: 0 15%;
-        height: 1100px;
+        height: 1200px;
     }
     .tile {
         width: 50%;
