@@ -60,7 +60,6 @@
 
 /* how it works*/
 #how-it-works {
-    background: #008dd8;
     color: white;
     padding: 100px 0px;
 }
@@ -82,14 +81,14 @@
     color: #b3dbf1;
 }
 #how-it-works>.inner>article h5 {
-    color: white;
+    color: black;
 }
 #how-it-works>.inner>article p {
-    color: white;
+    color: black;
     margin: 0 0 60px;
 }
 #how-it-works>.inner>article .timeline .step .marker {
-    border-color: #008dd8;
+    border-color: white
 }
 #how-it-works>.inner>article .timeline .step .tl-icon {
     height:72px; 
@@ -134,7 +133,8 @@
     color: white;
     text-align: center;
     font-size: 1.4em;
-    line-height: 23px
+    line-height: 21px;
+    border: 1px solid #5cd6e6;
 }
 .timeline .flag .inner strong {
     display: block;
@@ -148,14 +148,14 @@
 .timeline .flag .inner:after {
     position: absolute;
     content: " ";
-    bottom: -15px;
+    bottom: -19px;
     left: 50%;
     width: 0;
     height: 0;
     margin-left: -15px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid #fff
+    border-top: 15px solid #5BB6E6;
 }
 .timeline .bar {
     position: relative;
@@ -163,7 +163,7 @@
     clear: both;
     height: 6px;
     margin: 0 auto 32px;
-    background: rgba(255, 255, 255, 0.3)
+    background: rgb(75, 174, 227);
 }
 .timeline .step {
     position: relative;
@@ -186,7 +186,7 @@
     width: 30px;
     height: 30px;
     margin-left: -12px;
-    background: white;
+    background: black;
     border: 5px solid transparent;
     border-radius: 50%;
 }
@@ -291,10 +291,6 @@
 .timeline .footnote em {
     font-style: normal
 }
-
-
-
-/* end Timeline*/
 
 
 @media (max-width: 1023px) {
@@ -452,10 +448,8 @@
     position: relative;
 }
 #msform fieldset {
-    background: white;
     border: 0 none;
     border-radius: 3px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
     padding: 20px 50px;
     box-sizing: border-box;
     width: 80%;
