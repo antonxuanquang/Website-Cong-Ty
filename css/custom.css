@@ -1,6 +1,5 @@
 /* font format*/
 
-
 /* ends font format*/
 
 
@@ -9,7 +8,7 @@
     position: relative;
     height: 3px;
     width: 100px;
-    background: black;
+    background: #231F20;
     left: 50%;
     margin: 10px 0px 80px -50px;
 }
@@ -135,12 +134,12 @@
     width: 65px;
     height: 54px;
     margin: 0 auto 15px;
-    background: #5cb6e6;
+    background: #23BCD6;
     color: white;
     text-align: center;
     font-size: 1.4em;
     line-height: 21px;
-    border: 1px solid #5cd6e6;
+    border: 1px solid #23BCD6;
 }
 .timeline .flag .inner strong {
     display: block;
@@ -161,7 +160,7 @@
     margin-left: -15px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-top: 15px solid #5BB6E6;
+    border-top: 15px solid #23BCD6;
 }
 .timeline .bar {
     position: relative;
@@ -169,7 +168,7 @@
     clear: both;
     height: 6px;
     margin: 0 auto 32px;
-    background: rgb(75, 174, 227);
+    background: #23BCD6;
 }
 .timeline .step {
     position: relative;
@@ -187,10 +186,10 @@
 }
 .timeline .step .marker {
     position: absolute;
-    top: -50px;
-    left: 48%;
-    width: 30px;
-    height: 30px;
+    top: -48px;
+    left: 49.5%;
+    width: 25px;
+    height: 25px;
     margin-left: -12px;
     background: black;
     border: 5px solid transparent;
@@ -486,18 +485,17 @@
 #msform .action-button {
     width: 100px;
     height: auto;
-    background: #0088cc;
+    background: #23BCD6;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 4px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
     background-color: #33A0D6;
-    /*box-shadow: 0 0 0 2px white, 0 0 0 3px #0088cc;*/
+    /*box-shadow: 0 0 0 2px white, 0 0 0 3px #23BCD6;*/
 }
 
 /*radio buttons*/
@@ -522,7 +520,7 @@ h2.fs-title {
     font-weight: normal;
     font-size: 30px;
     text-align: center;
-    color: black !important;
+    color: #231F20 !important;
     margin-bottom: 15px;
 }
 .fs-subtitle {
@@ -590,6 +588,7 @@ h2.fs-title {
 .productLabel {
     font-size: 20px;
     z-index: -2;
+    color: #231F20;
 }
 
 .icon, .icon img {
@@ -674,7 +673,7 @@ h2.fs-title {
 /* END .icon:hover */
 .unit {
   position: absolute;
-  background: #0088cc;
+  background: #23BCD6;
   font-size: 50%;
   text-decoration: none;
   width: 180px;
