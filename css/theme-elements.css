@@ -1259,7 +1259,7 @@ hr {
 	background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.2), transparent);
 	background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
 	border: 0;
-	height: 1px;
+	height: 3px;
 	margin: 22px 0 22px 0;
 }
 
