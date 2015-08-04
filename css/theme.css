@@ -2078,7 +2078,7 @@ aside ul.nav-list > li > a {
 }
 
 #footer h1, #footer h2, #footer h3, #footer h4, #footer a {
-	color: #FFF;
+	color: #0E0E0E;
 }
 
 #footer h4 {
@@ -2220,7 +2220,8 @@ aside ul.nav-list > li > a {
 }
 
 #footer .contact i.fa-envelope {
-	font-size: 1em;
+
+	font-size: small;
 	top: 0;
 }
 
@@ -2237,7 +2238,7 @@ aside ul.nav-list > li > a {
 }
 
 #footer .footer-copyright {
-	background: #060606;
+	background: white;
 	border-top: 4px solid #060606;
 	margin-top: 40px;
 	padding: 30px 0 10px;
@@ -2267,8 +2268,8 @@ aside ul.nav-list > li > a {
 }
 
 #footer .footer-copyright p {
-	color: #DED7D7;
-	margin: 0;
+	color: #0E0E0E;
+
 	padding: 0;
 }
 
@@ -2368,7 +2369,7 @@ aside ul.nav-list > li > a {
 }
 
 #footer.narrow .footer-copyright {
-	margin-top: 0;
+	
 }
 
 #footer.narrow .nav > li > a {
