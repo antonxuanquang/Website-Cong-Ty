@@ -1,4 +1,20 @@
 /* font format*/
+* {
+    font-family: 'Raleway', 'Open Sans', sans-serif !important;
+}
+
+.fa {
+    font: normal normal normal 14px/1 FontAwesome !important;
+}
+
+h1.company-heading {
+    margin: 0;
+    font-weight: bold;
+    color: #23BCD6;
+}
+h1.company-heading span {
+    color: #838383;
+}
 
 /* ends font format*/
 
@@ -241,38 +257,38 @@
 }
 .timeline .pos-1 {
     height: 190px;
-    background: rgba(0, 0, 0, 0.08)
+    background: rgba(35, 188, 214, 0.25)
 }
 .timeline .pos-1 .inner:after {
-    border-bottom-color: rgba(0, 0, 0, 0.08)
+    border-bottom-color: rgba(35, 188, 214, 0.25)
 }
 .timeline .pos-2 {
     height: 210px;
-    background: rgba(0, 0, 0, 0.14)
+    background: rgba(35, 188, 214, 0.40)
 }
 .timeline .pos-2 .inner:after {
-    border-bottom-color: rgba(0, 0, 0, 0.14)
+    border-bottom-color: rgba(35, 188, 214, 0.40)
 }
 .timeline .pos-3 {
     height: 230px;
-    background: rgba(0, 0, 0, 0.2)
+    background: rgba(35, 188, 214, 0.55)
 }
 .timeline .pos-3 .inner:after {
-    border-bottom-color: rgba(0, 0, 0, 0.2)
+    border-bottom-color: rgba(35, 188, 214, 0.55)
 }
 .timeline .pos-4 {
     height: 250px;
-    background: rgba(0, 0, 0, 0.26)
+    background: rgba(35, 188, 214, 0.70)
 }
 .timeline .pos-4 .inner:after {
-    border-bottom-color: rgba(0, 0, 0, 0.26)
+    border-bottom-color: rgba(35, 188, 214, 0.70)
 }
 .timeline .pos-5 {
     height: 270px;
-    background: rgba(0, 0, 0, 0.31)
+    background: rgba(35, 188, 214, 0.95)
 }
 .timeline .pos-5 .inner:after {
-    border-bottom-color: rgba(0, 0, 0, 0.31)
+    border-bottom-color: rgba(35, 188, 214, 0.95)
 }
 .timeline .footnote {
     position: relative;
@@ -334,7 +350,7 @@
         margin: 0 0 10px
     }
     #how-it-works>.inner>article p {
-        color: white;
+        color: black;
         margin: 0 0 10px
     }
     #how-it-works>.inner>article .timeline .flag {
@@ -486,7 +502,7 @@
     width: 100px;
     height: auto;
     background: #23BCD6;
-    font-weight: bold;
+    font-size: 16px;
     color: white;
     border: 0 none;
     cursor: pointer;
@@ -507,6 +523,8 @@
 
 .fs-option {
     text-align: left !important;
+    font-size: 1.3em;
+    line-height: 30px;
 }
 
 .fs-option:hover, .fs-option input {
@@ -681,7 +699,7 @@ h2.fs-title {
   padding-top: 30px !important;
   line-height: 1em;
   color: white;
-  border-radius: 5px;
+  font-weight: 200;
   transition: 0.6s;
 }
 

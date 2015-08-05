@@ -9,7 +9,7 @@ html {
 
 body {
 	background-color: white;
-	color: #060606;
+	color: #231F20;
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 22px;
@@ -1828,7 +1828,7 @@ aside ul.nav-list > li > a {
 /* Home Intro */
 .home-intro {
 	background: url(../image/quotes-background.jpg) center no-repeat;
-	background-size: 100%;
+	background-size: 100% 350%;
 	overflow: hidden;
 	padding: 20px 0 10px 0;
 	position: relative;
@@ -1841,14 +1841,14 @@ aside ul.nav-list > li > a {
 	font-size: 1.4em;
 	font-weight: 300;
 	max-width: 800px;
-	padding-top: 5px;
+	padding-top: 40px;
 }
 
 .home-intro p span {
 	color: #999;
 	display: block;
 	font-size: 0.8em;
-	padding-top: 5px;
+	padding-top: 50px;
 }
 
 .home-intro p em {
