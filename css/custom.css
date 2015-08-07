@@ -517,6 +517,26 @@ h1.company-heading span {
     /*box-shadow: 0 0 0 2px white, 0 0 0 3px #23BCD6;*/
 }
 
+@media (max-width: 1034px) {
+    #msform {
+        width: 500px;
+    }
+    #msform fieldset {
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    #msform {
+        width: 400px;
+    }
+    #msform fieldset {
+        margin: 0 auto;
+        width: 400px;
+    }
+}
+
 /*radio buttons*/
 .fs-option input, .fs-option textarea{
     line-height: 30px;
@@ -601,6 +621,7 @@ h2.fs-title {
     background: #27AE60;
     color: white;
 }
+
 
 
 
