@@ -381,7 +381,7 @@ body {
 }
 
 body.sticky-menu-active #header {
-	border-bottom: 1px solid #E9E9E9;
+	border-bottom: 1px solid #D6D6D5;
 	position: fixed;
 	top: -57px;
 	width: 100%;
@@ -947,7 +947,7 @@ body.scrolling .nav-main-collapse.collapsing {
 }
 
 body.sticky-menu-active #header.transparent {
-	background: #fff;
+	background: rgba(214, 214, 213, 1);
 }
 
 body.sticky-menu-active #header.transparent.semi-transparent {
@@ -1828,7 +1828,7 @@ aside ul.nav-list > li > a {
 /* Home Intro */
 .home-intro {
 	background: url(../image/quotes-background.jpg) center no-repeat;
-	background-size: 100% 350%;
+	background-size: 150% 500%;
 	overflow: hidden;
 	padding: 20px 0 10px 0;
 	position: relative;
